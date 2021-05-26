@@ -50,6 +50,21 @@ public class ControlFlowExercises {
 //            i *= i;
 //        }
 
+        Scanner scanner1 = new Scanner(System.in);
+        final int PIN = 12345;
+        int userInput = scanner1.nextInt();
+        int attempts = 3;
+        for (int x = 1; x <= attempts;)x++;{
+                System.out.println("Please enter pin:");
+                if(userInput == PIN){
+                    System.out.println("Correct, welcome back!");
+                } else{
+                    System.out.println("Incorrect, try again");
+                }
+
+        }
+
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("What number would you like to go up to? ");
