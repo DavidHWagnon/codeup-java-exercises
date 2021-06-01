@@ -4,7 +4,7 @@ import java.lang.Math;
 public class HighLow {
 
 
-
+    // main method containing the guessing function
     public static void guessingGame() {
         Scanner scanner = new Scanner(System.in);
         int number = 1 + (int)(100  * Math.random());
@@ -34,6 +34,8 @@ public class HighLow {
                     "The number was " + number);
         }
     }
+
+    // method to call the functions
     public static void main(String[] args) {
         guessingGame();
     }
