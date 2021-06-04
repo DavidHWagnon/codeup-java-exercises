@@ -19,7 +19,7 @@ public class ArraysExercises {
             System.out.println(person.getName());
         }
         Person sophia = new Person("Sophia");
-        people = addPerson(people. sophia);
+        people = addPerson(people, sophia);
         for (Person person : people){
             System.out.println(person.getName());
         }
