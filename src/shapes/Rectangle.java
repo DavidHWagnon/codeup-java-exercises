@@ -8,7 +8,7 @@ public class Rectangle {
         this.length = length;
         this.width = width;
     }
-
+// Rectangle
     public Rectangle() {
 
     }
