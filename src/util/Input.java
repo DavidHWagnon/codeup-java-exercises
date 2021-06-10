@@ -47,6 +47,18 @@ public class Input {
         return myInt;
     }
 
+    @SuppressWarnings("all")
+    public int getIntt(String prompt){
+        System.out.println(prompt + "\n");
+        try{
+            return Integer.valueOf(getString());
+        }catch(NumberFormatException e){
+            System.out.println("That's not a number!");
+            return getIntt("Please enter a whole number");
+        }
+    }
+
+
     double getDouble(double min, double max){
         Scanner getDoubleScanner = new Scanner(System.in);
         System.out.println("Give me a double between 1 and 100");
@@ -64,5 +76,7 @@ public class Input {
         System.out.println(myDouble);
         return myDouble;
     }
+
+
 
 }
